@@ -2,13 +2,13 @@
 
 if (enable == 1'b1) begin /* 1 la so bit
                              'b khai bao so nhi phan
-							 1 la gia tri */
-	data = 20; //decimal
-	address = 16'hACDE; // hexadecimal 16 bits voi gia tri la 1010110011011110
+			      1 la gia tri */
+    data = 20; //decimal
+    address = 16'hACDE; // hexadecimal 16 bits voi gia tri la 1010110011011110
     wr_enable = 1'b1;
 end else begin // begin va end tuong tu nhu {} trong C/C++
     data = 32'b1010; // binary 32 bits voi gia tri la 00000000000000000000000000001010
-	address = 4'hA; // hexadecimal 4 bits voi gia tri la 1010
+    address = 4'hA; // hexadecimal 4 bits voi gia tri la 1010
     wr_enable = 2'b11 // binary 2 bits voi gia tri la 11
 end
 
@@ -16,9 +16,9 @@ end
 
 case (address) // address la dia chi luu tru so do trang thai cua mach tuan tu dong bo - FSM (finite state machine)
       0: $display ("Chuc nang thuc hien binh thuong");
-	  1: $display ("Khong the thuc hien chuc nang");
-	  2: $display ("Dung thuc hien chuong trinh");
-	  default: $display ("Thuc hien chuong trinh");
+      1: $display ("Khong the thuc hien chuc nang");
+      2: $display ("Dung thuc hien chuong trinh");
+      default: $display ("Thuc hien chuong trinh");
 endcase
 
 // while
