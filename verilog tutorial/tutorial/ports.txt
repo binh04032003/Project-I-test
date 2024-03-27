@@ -1,0 +1,18 @@
+// Ports
+
+/* co 3 kieu ports voi cac cach khai bao
+   input [:] list_of_identifiers;
+   output [:] list_of_identifiers;
+   inout [:] list_of_identifiers;
+   [:] the hien so bit cua bien   */
+   
+   input clk; // clock
+   input [3:0] data_in; // dau vao 4 bits
+                        // data type port input nam trong module test la net
+						// data type port input nam ngoai module test la reg hoac net
+   output [15:0] data_out; // dau ra 16 bits
+                        // data type port output nam trong module test la net hoac reg
+						// data type port output nam trong module test la net 
+   inout         data_bi;  // bi-directional data 
+                           // nam trong hay nam ngoai module test deu la type net
+						   
