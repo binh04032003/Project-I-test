@@ -1,0 +1,62 @@
+// arithmetic operators
+
+$display ("10 + 20 = %d", 10 + 20);  // 10 + 20 = 30
+$display ("10 - 20 = %d", 10 - 20);  // 10 - 20 = -10
+$display ("20 - 10 = %d", 20 - 10);  // 20 - 10 = 10
+$display ("10 * 20 = %d", 10 * 20);  // 10 * 20 = 200
+$display ("10 / 20 = %d", 10 / 20);  // 10 / 20 = 0.5
+$display ("10 % 3 = %d", 10 + 20);  //  10 %  3 = 1
+$display ("-10 = %d", -10); // - 10 = -10
+
+// relational operators
+
+$display (" 10 <= 20 = %b", (10 <= 20)); // 10 <= 20 = 1
+// tra ve ket qua 1 neu ham so sanh la dung
+$display ("10 >= 20 = %b", (10 >= 20)); // 10 >= 20 = 0
+// tra ve ket qua 0 neu ham so sanh la sai
+$display (" 1'bx <= 20 = %b", (1'bx <= 20)); // 1'bx <= 20 = x
+// tra ve ket qua x neu ham so sanh chua bit x
+
+// equality operators
+
+    // so sanh bang co the chua bit x hoac z
+$display (" 4'b1001 ===  4'b1001 = %b", (4'b1001 ===  4'b1001)); // 4'b1001 ===  4'b1001 = 1
+$display (" 4'b10x1 ===  4'bx001 = %b", (4'b10x1 ===  4'bx001)); // 4'b10x1 ===  4'bx001 = 0
+
+    // dau so sanh khac co the chua bit x hoac z
+$display (" 4'bx0x1 !==  4'bx001 = %b", (4'bx0x1  ! ==  4'bx001)); // 4'bx0x1  ! ==  4'bx001 = 1
+$display (" 4'bz0x1 !==  4'bz001 = %b", (4'bz0x1  ! ==  4'bz001)); // 4'bz0x1  ! ==  4'bz001 = 1
+ 
+    // so sanh bang voi bit logic
+$display (" 10       ==   20      = %b", (10       ==   20)); // 10       ==   20  = 0
+$display (" 5       ==   5       = %b", (5       ==   5));  // 5       ==   5  = 1
+
+   // dau so sanh khac voi bit logic
+$display (" 5       !=   5       = %b", (5        ! =   5));  //  5        ! =   5 = 0
+$display (" 5       !=   6       = %b", (5        ! =   6));  //  5        ! =   6 = 1
+
+//logical operators
+
+   // logical and
+$display ("1'b1 && 1'b1 = %b", (1'b1 && 1'b1)); // 1'b1 && 1'b1 = 1
+   
+   // logical or
+$display ("1'b1 || 1'b1 = %b", (1'b1 || 1'b1)); // 1'b1 || 1'b1 = 0
+
+   // logical negation
+$display ("! 1'b1       = %b", ( !   1'b1)); // !   1'b1 = 0
+
+//bit-wise operators
+    // thuc hien phep toan tren tung bit 
+
+
+   // bit-wise negation
+$display (" ~4'b0001           = %b", (~4'b0001));  //~4'b0001 = 1110
+   // bit-wise and
+$display (" 4'b0001 &  4'b1001 = %b", (4'b0001 &  4'b1001)); // 4'b0001 &  4'b1001 = 0001
+  // bit-wise or
+$display (" 4'b0001 |  4'b1001 = %b", (4'b0001 |  4'b1001)); // 4'b0001 |  4'b1001 = 1000
+  // bit-wise xor
+$display (" 4'b0001 ^  4'b1001 = %b", (4'b0001 ^  4'b1001)); // 4'b0001 ^  4'b1001 = 1000
+  // bit-wise xnor
+$display (" 4'b0001 ~^ 4'b1001 = %b", (4'b0001 ~^ 4'b1001)); // 4'b0001 ~^ 4'b1001 = 0111
