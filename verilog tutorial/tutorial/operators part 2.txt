@@ -1,0 +1,36 @@
+//reduction operators
+  // thuc hien phep toan tren tung bit co the chua bit x hoac z
+  // bit-wise and reduction
+$display (" &  4'b1001 = %b", (&  4'b1001)); //&  4'b1001 = 0
+  // bit-wise nand reduction
+$display (" &  4'b1001 = %b", (&  4'b1001)); //&  4'b1001 = 1
+  //  bit-wise or reduction
+$display (" &  4'b1001 = %b", (&  4'b1001)); //&  4'b1001 = 1
+  // bit-wise nor reduction
+$display (" &  4'b1001 = %b", (&  4'b1001)); //&  4'b1001 = 0
+  // bit-wise xor reduction
+$display (" &  4'b1001 = %b", (&  4'b1001)); //&  4'b1001 = 0
+  // bit-wise xor reduction
+$display (" &  4'b1001 = %b", (&  4'b1001)); //&  4'b1001 = 1
+
+//shift operators
+
+   //left shift
+   // dich qua trai 1 bit, dien bit 0 vao vi tri con thieu
+$display (" 4'b1001 << 1 = %b", (4'b1001 << 1)); // 4'b1001 << 1 = 0010
+
+   //right shift
+   // dich qua phai 1 bit, dien bit 0 vao vi tri con thieu
+$display (" 4'b1001 >> 1 = %b", (4'b1001 >> 1)); // 4'b1001 >> 1 = 0100
+
+//concatenation operators
+
+$display (" {4'b1001,4'b10x1}  = %b", {4'b1001,4'b10x1}); //{4'b1001,4'b10x1}=100110x1
+
+//replication operators
+    // {n{m}} lap so m, n lan
+$display (" {4{4'b1001}}      = %b", {4{4'b1001}}); //4{4'b1001} = 1001100110011001
+
+//conditional operators
+    //dieu kien ? dung : sai;
+     (enable)   ? data : 1'bz;
